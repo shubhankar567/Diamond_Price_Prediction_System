@@ -1,9 +1,9 @@
 pandas
 numpy
-statsmodel
 scikit-learn
 seaborn
 requests
 flask
+bs4
 
 #-e .
