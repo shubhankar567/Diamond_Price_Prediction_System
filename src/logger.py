@@ -1,6 +1,6 @@
 import logging
 import os
-from datetime import datetime
+from datetime import datetime # type: ignore
 
 file_name = f"{datetime.now().strftime('%d_%m_%Y_%H_%M_%S')}.log"
 file_path = os.path.join(os.getcwd(), 'logs')

@@ -1,6 +1,6 @@
 # Importing necessary libraries
 import os
-import sys
+import sys # type: ignore
 #sys.path.append(r'E:\Python_Models\Diamond_Price_Prediction\src') 
 #Interpreter was unable to locate src.logger and src.exception
 #So I written the above command in the venv\Lib\site-packages\sitecustomize.py
@@ -9,7 +9,7 @@ from src.logger import logging
 from src.exception import CustomeException
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from dataclasses import dataclass
+from dataclasses import dataclass # type: ignore
 
 
 # Data Ingestion Initialization
