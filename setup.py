@@ -13,7 +13,7 @@ def get_requirements(file_path:str)-> List[str]: #type:ignore
 setup(
     name = "Diamond_Price_Prediction",
     author = 'Shubhankar Chaturvedi',
-    author_email = 'shubhankar58448@gmail.com',
+    author_email = 'shubhankar5848@gmail.com',
     packages = find_packages(),
     install_require = get_requirements('requirements.txt')
 )
