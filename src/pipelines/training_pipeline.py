@@ -1,6 +1,7 @@
 import pandas as pd
 from components.data_ingestion import DataIngestion
 from components.data_transformation import DataTransformation
+from components.model_trainer import ModelTrainer
 
 if __name__ == "__main__":
     # Initialization of data ingestion
@@ -10,6 +11,8 @@ if __name__ == "__main__":
 
     # Initialization for transformation
     transform_obj = DataTransformation()
-    train_dataset, test_dataset, _ = transform_obj.data_transform(train_path, test_path)
+    train_dataset, test_dataset, pkl_file_path = transform_obj.data_transform(train_path, test_path)
 
     # Initialization for Training
+    trainer_obj = ModelTrainer()
+    trainer_obj.model_trainer(train_dataset, test_dataset)
