@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
-from typing import List
+from typing import List #type:ignore
 
-def get_requirements(file_path:str)-> List[str]:
+def get_requirements(file_path:str)-> List[str]: #type:ignore
     with open(file_path, 'r') as file_obj:
         requirements = file_obj.readlines()
     
