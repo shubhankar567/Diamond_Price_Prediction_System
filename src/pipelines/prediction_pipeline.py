@@ -1,7 +1,7 @@
 import os, sys
-from exception import CustomeException
-from logger import logging
-from utils import load_pkl
+from src.exception import CustomeException
+from src.logger import logging
+from src.utils import load_pkl
 import pandas as pd
 
 class PredictPipeine:

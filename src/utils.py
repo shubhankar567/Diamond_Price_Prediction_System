@@ -1,7 +1,7 @@
 import os, sys
 import pickle # type: ignore
-from exception import CustomeException 
-from logger import logging
+from src.exception import CustomeException 
+from src.logger import logging
 from sklearn.metrics import r2_score
 from sklearn.linear_model import LinearRegression, Lasso, Ridge, ElasticNet
 from sklearn.tree import DecisionTreeRegressor

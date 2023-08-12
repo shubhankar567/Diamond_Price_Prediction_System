@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 from src.logger import logging
 from src.exception import CustomeException
-from utils import model_evaluation, save_pkl
+from src.utils import model_evaluation, save_pkl
 from sklearn.linear_model import LinearRegression, Lasso, Ridge, ElasticNet
 from sklearn.tree import DecisionTreeRegressor
 

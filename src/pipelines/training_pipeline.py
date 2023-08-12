@@ -1,9 +1,9 @@
 import pandas as pd
-from components.data_ingestion import DataIngestion
-from components.data_transformation import DataTransformation
-from components.model_trainer import ModelTrainer
+from src.components.data_ingestion import DataIngestion
+from src.components.data_transformation import DataTransformation
+from src.components.model_trainer import ModelTrainer
 
-if __name__ == "__main__":
+def run_pipeline():
     # Initialization of data ingestion
     ingest_obj = DataIngestion()
     train_path, test_path = ingest_obj.initiateIngestion() # type: ignore
@@ -16,3 +16,4 @@ if __name__ == "__main__":
     # Initialization for Training
     trainer_obj = ModelTrainer()
     trainer_obj.model_trainer(train_dataset, test_dataset)
+    print("training pipeline")

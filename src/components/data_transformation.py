@@ -8,7 +8,7 @@ import sys, os # type: ignore
 from src.logger import logging
 from src.exception import CustomeException
 from dataclasses import dataclass #type: ignore
-from utils import save_pkl
+from src.utils import save_pkl
 
 # Data Transformataion Configuration class 
 @dataclass
