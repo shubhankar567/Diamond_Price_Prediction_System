@@ -4,6 +4,7 @@ scikit-learn
 seaborn
 requests
 flask
+Flask-Cors
 bs4
 
 #-e .
